@@ -52,20 +52,22 @@ document.getElementById('Reset').addEventListener('click',resetGame);
 //create function to randomly choose from the poisons
 
 function getRandomPoison(){
-    choices = ['llama','human','panther','parrot','whale','death'];
-    const randomIndex = Math.floor(Math.random()* 6)
+    choices = ['llama','human','panther'];
+    //'parrot','whale','death'
+    const randomIndex = Math.floor(Math.random()* 3 )
     return choices[randomIndex]};
 
-  function playGame(){ 
+function playGame(){ 
    results.sect1 = getRandomPoison();
    results.sect2 = getRandomPoison();
    results.sect3 = getRandomPoison();
 
    if (results.sect1 === results.sect2 && results.sect1 === results.sect3){
-       winner = 'Player won!'
+       winner ='Player won!'
    }else{
        lost = 'try again'
    }
+   return winner || lost
 };
 
 
