@@ -5,5 +5,23 @@ body{
 }
 
 button{
-    color: green;
+    color: rgb(34, 13, 230);
+}
+
+div{
+    display:inline-block;
+
+}
+button{
+    display: block;
+}
+#sect1{
+    background-color: greenyellow;
+    align-self: center;
+}
+#sect2{
+    background-color: honeydew;
+}
+#sect3{
+    background-color: hotpink;
 }
