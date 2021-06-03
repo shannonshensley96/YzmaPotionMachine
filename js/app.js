@@ -74,9 +74,10 @@ function playGame(){
    results.sect1 = getRandomPoison();
    results.sect2 = getRandomPoison();
    results.sect3 = getRandomPoison();
+  
    sect1.style.backgroundImage = potionChoices[results.sect1].imgUrl;
-//    let sect2 = potionChoices[results.sect2];
-//    let sect3 = potionChoices[results.sect3];
+     sect2.style.backgroundImage = potionChoices[results.sect2].imgUrl;
+     sect3.style.backgroundImage = potionChoices[results.sect3].imgUrl;
 
    if (results.sect1 === results.sect1 && results.sect1 === results.sect3){
        winner ='Player won!'
@@ -96,7 +97,5 @@ function resetGame(){
 };
 
 function render(){
-//    var sect1 =  document.getElementById('sect1').innerHTML = potionChoices[results.sect1];
-//    var sect2 =  document.getElementById('sect2')
-//    var sect3 =  document.getElementById('sect3')
+     
 };

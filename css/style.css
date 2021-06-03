@@ -16,12 +16,18 @@ button{
     display: block;
 }
 #sect1{
-    background-color: greenyellow;
-    align-self: center;
+    /* background-color: rgb(205, 165, 243); */
+    height: 200px;
+    width: 150px;
 }
 #sect2{
-    background-color: honeydew;
+    background-color: rgb(205, 165, 243);
+    width: 150px;
+    height: 200px;
 }
+
 #sect3{
-    background-color: hotpink;
+    background-color: rgb(205, 165, 243);
+    width: 150px;
+    height: 200px;
 }
