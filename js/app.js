@@ -2,6 +2,7 @@
 const potionChoices = {
     llama: {
         imgUrl: 'img/llamaPotion.png'
+
     },
     panther:{
         imgUrl: 'img/pantherPotion.png'
@@ -16,12 +17,24 @@ const potionChoices = {
         imgUrl : 'img/deathPotion.png'
     }
 }
+const gameResetImage = {
+    imgUrl: 'img/YzmaResetGame.png'
+}
+const winnerImg = {
+    imgUrl : 'img/winnerImg.png'
+}
+const lostImg = {
+    imgUrl: 'img/lostImg.png'
+}
 
- 
+// const backgroundImage = {
+//     imgUrl: 'img/yzma&kronk.png'
+// }
 //variables//
 let results;
-let winner;
-let lost;
+const winner = document.getElementById('winner');
+ 
+const lost = document.getElementById('lost');
 
 
 
@@ -34,25 +47,13 @@ const sect2 = document.getElementById('sect2');
 const sect3 = document.getElementById('sect3');
 
 
+
 results = {
     sect1: 'llama',
     sect2: 'llama',
     sect3: 'llama'
 }
 
-resultsImage = {
-    // sect1:{
-    //    imgEl: document.querySelector('results.sect1 img')
-    // },
-    // sect2:{
-    //     resultEl: document.getElementById('#sect2-results'),
-    //     imgEl: document.getElementById('#sect2-results img')
-    // },
-    // sect3:{
-    //     resultEl: document.getElementById('#sect3-results'),
-    //     imgEl:document.getElementById('#sect3-results img')
-    // }
-};
 
 
 //add event listeners//  for buttons play and restart  
@@ -75,27 +76,39 @@ function playGame(){
    results.sect2 = getRandomPoison();
    results.sect3 = getRandomPoison();
   
-   sect1.style.backgroundImage = potionChoices[results.sect1].imgUrl;
-     sect2.style.backgroundImage = potionChoices[results.sect2].imgUrl;
-     sect3.style.backgroundImage = potionChoices[results.sect3].imgUrl;
+   sect1.style.backgroundImage =  `url(${potionChoices[results.sect1].imgUrl})`,
+   sect2.style.backgroundImage =  `url(${potionChoices[results.sect2].imgUrl})`;
+   sect3.style.backgroundImage = `url(${potionChoices[results.sect3].imgUrl})`;
 
-   if (results.sect1 === results.sect1 && results.sect1 === results.sect3){
-       winner ='Player won!'
+   if (results.sect1 === results.sect2 && results.sect1 === results.sect3){
+       winner.innerText ='We are going to poison Kuzco!',
+       winner.style.backgroundImage = `url(${winnerImg.imgUrl})`,
+       winner.style.justifyContent = center;
+
    }else{
-       lost ='try again'
+       lost.innerText ='Why do we even have that lever?',
+       lost.style.backgroundImage = `url(${lostImg.imgUrl})`
    }
-   render()
+   
 };
 
 
 // reset game should set all the values back to blank 
 function resetGame(){ 
     console.log('resetGame is working')
-    results.sect1 = null;
-    results.sect2 = null;
-    results.sect3 = null;
+    sect1.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
+    sect2.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
+    sect3.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
+    winner.innerText = null;
+    winner.style.backgroundImage = null;
+    lost.innerText = null;
+    lost.style.backgroundImage = null;
 };
+//set background image and size in DOm
 
-function render(){
-     
-};
+// document.querySelector('body').style.backgroundImage = `url(${backgroundImage.imgUrl})`;
+// document.querySelector('body').style.backgroundSize = 'cover'
+
+    sect1.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
+    sect2.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
+    sect3.style.backgroundImage = `url(${gameResetImage.imgUrl})`;

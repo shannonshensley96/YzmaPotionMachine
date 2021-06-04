@@ -1,11 +1,22 @@
 body{
     
-    background-color: #555669;
+    background-color: rgb(78, 32, 78) ;
+    display: grid;
+    /* grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 33% 33% 33%;
+       */
     
 }
 
-button{
+.start{
     color: rgb(34, 13, 230);
+    
+}
+.tryAgain{
+
+        color: rgb(34, 13, 230);
+        
+    
 }
 
 div{
@@ -14,20 +25,57 @@ div{
 }
 button{
     display: block;
+    align-items: baseline;
 }
 #sect1{
-    /* background-color: rgb(205, 165, 243); */
-    height: 200px;
+    background-color: rgb(205, 165, 243);
+    height: 180px;
     width: 150px;
-}
+    background-size: cover;}
+    
 #sect2{
     background-color: rgb(205, 165, 243);
     width: 150px;
-    height: 200px;
+    height: 180px;
+    background-size: cover;
+    
 }
-
 #sect3{
     background-color: rgb(205, 165, 243);
     width: 150px;
-    height: 200px;
+    height: 180px;
+    background-size: cover;
+    
+} */
+#winner{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+
 }
+
+#lost{
+    width: 200px;
+    height: 300px; 
+    background-image: cover;
+    
+} 
+h1{
+    color:rgb(217, 197, 235);
+    text-align: center;
+    background-image: '';
+}
+/* //rgb(205, 165, 243)
+
+
+#slot-machine{
+  background-color: rgb(205, 165, 243);
+  height: 180px;
+  width: 150px;
+  background-size:cover;
+}
+
+
+
+
+ 
