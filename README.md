@@ -1,14 +1,27 @@
 # Yzma's potion Machine
 
+<img width="1369" alt="Screen Shot 2021-06-04 at 5 57 37 AM" src="https://user-images.githubusercontent.com/84984478/120791748-32ea0e00-c4fa-11eb-83b3-28a957bf818e.png">
 
-Inspired one of my favorite childhood movies, the object of this game is to have all the matching potions to help Yzma kick Kuzsco off the throne. 
-To begin all you have to do is press the play button, and to play again just click the try again button to reset the game.
+<article>Inspired one of my favorite childhood movies, the object of this game is to have all the matching potions to help Yzma kick Kuzsco off the throne. </article>
 
+<h3>This game was built using</h3> 
+<ul>
+<li>JavaScript</li>
+<li>Css</li>
+<li>HTML</li>
+</ul>
 
+<h3>Game Link</h3>
+<a href="https://shannonshensley96.github.io/YzmaPotionMachine/">Try Yzma's Potion Machine</a>
 
-This game was built using Css, Javascript, and HTML
+<h3>Game Rules</h3>
+<p>The rules are simple, all you need to do is match three potions so that Yzma can take over the throne.
+To begin all you have to do is press the play button. To play again just click the try again button to reset the game.</p>
 
-Game Link 
-
-
-In the future, I plan to add more transitions depending on if the player won or lost, I want to add a story line, and maybe audio. 
+<h3>NextSteps:</h3>
+<p>In the future I plan too..</p>
+ <ul>
+ <li>Add transitions for win/loss</li>
+ <li>Add audio</li>
+ <li>Create Levels and a story line</li>
+ </ul>
