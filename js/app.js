@@ -69,7 +69,7 @@ function playGame(){
    sect3.style.backgroundImage = `url(${potionChoices[results.sect3].imgUrl})`;
 
    if (results.sect1 === results.sect2 && results.sect1 === results.sect3){
-       winnerLoser.innerText ='All hail queen Yzma!'
+       winnerLoser.innerText ='Make way for the new Queen!'
     }else{
        winnerLoser.innerText ='Better luck next time!'  
    }
