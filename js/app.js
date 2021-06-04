@@ -21,20 +21,23 @@ const gameResetImage = {
     imgUrl: 'img/YzmaResetGame.png'
 }
 const winnerImg = {
-    imgUrl : 'img/winnerImg.png'
+    imgUrl : 'img/yzmaThrone.png'
 }
 const lostImg = {
     imgUrl: 'img/lostImg.png'
 }
+const backgroundImage={
+    imgUrl: 'img/palaceBackground.png'
+}
 
-// const backgroundImage = {
-//     imgUrl: 'img/yzma&kronk.png'
-// }
-//variables//
 let results;
-const winner = document.getElementById('winner');
+const winnerLoser = document.getElementById('results');
  
-const lost = document.getElementById('lost');
+//set background using DOM
+
+document.querySelector('body').style.backgroundImage = `url(${backgroundImage.imgUrl})`;
+document.querySelector('body').style.backgroundSize = 'cover';
+
 
 
 
@@ -46,7 +49,9 @@ const sect2 = document.getElementById('sect2');
 
 const sect3 = document.getElementById('sect3');
 
+const winSlotImg = document.getElementById('slotMachine')
 
+const lostSlotImg =document.getElementById('slotMachine')
 
 results = {
     sect1: 'llama',
@@ -64,6 +69,33 @@ document.getElementById('Reset').addEventListener('click',resetGame);
 
 
 //create function to randomly choose from the poisons
+   winSlotImg.onload = function (){
+    var winnerImage = document.getElementById('slotMachine')
+    var winning = document.createElement("img")
+    winning.onload = function(){
+        winnerImage.appendChild(winning)
+    }
+    winning.src = 'img/yzmaThrone.png'
+}
+
+lostSlotImg.onload = function (){
+    var losingImage = document.getElementById('slotMachine')
+    var lost = document.createElement("img")
+    lost.onload = function(){
+        losingImage.appendChild(lost)
+    }
+    lost.src = 'img/lostImg.png'
+}
+
+//window.onload=function() {
+//     var thumbContainer = document.getElementById("thmbDiv");
+//     var thumbnail = document.createElement("img");
+//     thumbnail.onload=function() {
+//       thumbContainer.appendChild(thumbnail);
+//     }
+//     thumbnail.src = "http://blog.lefigaro.fr/bd/img-sanctuaire.png";
+//   }
+
 
 function getRandomPoison(){
     choices = ['llama','panther','parrot','whale','death'];
@@ -77,17 +109,19 @@ function playGame(){
    results.sect3 = getRandomPoison();
   
    sect1.style.backgroundImage =  `url(${potionChoices[results.sect1].imgUrl})`,
-   sect2.style.backgroundImage =  `url(${potionChoices[results.sect2].imgUrl})`;
+   sect2.style.backgroundImage =  `url(${potionChoices[results.sect2].imgUrl})`,
    sect3.style.backgroundImage = `url(${potionChoices[results.sect3].imgUrl})`;
 
    if (results.sect1 === results.sect2 && results.sect1 === results.sect3){
-       winner.innerText ='We are going to poison Kuzco!',
-       winner.style.backgroundImage = `url(${winnerImg.imgUrl})`,
-       winner.style.justifyContent = center;
+       winnerLoser.innerText ='We are going to poison Kuzco!'
+       winSlotImg.onload()
+    //    winner.style.backgroundImage = `url(${winnerImg.imgUrl})`,
+       
 
    }else{
-       lost.innerText ='Why do we even have that lever?',
-       lost.style.backgroundImage = `url(${lostImg.imgUrl})`
+       winnerLoser.innerText ='Why do we even have that lever?'
+        lostSlotImg.onload()
+    //    lost.style.backgroundImage = `url(${lostImg.imgUrl})`
    }
    
 };
@@ -96,19 +130,17 @@ function playGame(){
 // reset game should set all the values back to blank 
 function resetGame(){ 
     console.log('resetGame is working')
+    winSlotImg.winnerImage = null;
+    lostSlotImg.losingImage = null;
     sect1.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
     sect2.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
     sect3.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
-    winner.innerText = null;
-    winner.style.backgroundImage = null;
-    lost.innerText = null;
-    lost.style.backgroundImage = null;
+    winnerLoser.innerText = 'Help Yzma find matching potions to get rid of Kuzsco, and take the throne!';
+    
 };
 //set background image and size in DOm
 
-// document.querySelector('body').style.backgroundImage = `url(${backgroundImage.imgUrl})`;
-// document.querySelector('body').style.backgroundSize = 'cover'
-
-    sect1.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
-    sect2.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
-    sect3.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
+sect1.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
+sect2.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
+sect3.style.backgroundImage = `url(${gameResetImage.imgUrl})`;
+ 

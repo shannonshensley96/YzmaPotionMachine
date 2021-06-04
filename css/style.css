@@ -1,80 +1,103 @@
+@font-face {
+    font-family: emporer;
+    src: url(${font/Las\locuras\del\emperador.imgUrl})
+   
+}
 body{
-    
-    background-color: rgb(78, 32, 78) ;
-    display: grid;
-    /* grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 33% 33% 33%;
-       */
+    width: 100%;
+    background-color: rgb(78, 32, 78) ;  
+
     
 }
 
-.start{
-    color: rgb(34, 13, 230);
-    
+ 
+h3{
+    height: 50px;
+    font-family: emperor;
 }
-.tryAgain{
+h1{
+    color:rgb(205, 158, 247);
+    text-align: center;
+    font-size: 40px;
+} 
+#slotMachine{
+    align-content: center;
+    width: 90%;
+    height: 400px;
+    margin-right: 475px;
+    margin-left: 475px;
+    margin-top: 150px;
+    padding-bottom: 5px;
+}
 
-        color: rgb(34, 13, 230);
-        
-    
-}
-
-div{
-    display:inline-block;
-
-}
-button{
-    display: block;
-    align-items: baseline;
-}
 #sect1{
     background-color: rgb(205, 165, 243);
-    height: 180px;
-    width: 150px;
-    background-size: cover;}
+    width: 180px;
+    height: 200px;
+    background-size: cover;
+    align-items: center;
+    display: inline-block;
+    margin: 25px
+}
+
     
 #sect2{
     background-color: rgb(205, 165, 243);
-    width: 150px;
-    height: 180px;
+    width: 180px;
+    height: 200px;
     background-size: cover;
+    align-items: center; 
+    display: inline-block;
+    margin: 25px
+    
     
 }
 #sect3{
     background-color: rgb(205, 165, 243);
-    width: 150px;
-    height: 180px;
+    width: 180px;
+    height: 200px;
     background-size: cover;
-    
-} */
-#winner{
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-
-}
-
-#lost{
-    width: 200px;
-    height: 300px; 
-    background-image: cover;
+    align-items: center;
+   display: inline-block;
+     margin:25px;
+   
     
 } 
-h1{
-    color:rgb(217, 197, 235);
+.start{
+    height: 60px;
+    width: 120px;
+    border-radius: 20px;
+    margin: 25px;    
+    background-color: rgb(70, 20, 80);
+    opacity: 75%;
+    color:rgb(247, 238, 224);
+}
+.tryAgain{
+   background-color: rgb(70, 20, 80);
+   opacity: 75%;
+   height: 60px;
+    width: 120px;
+    border-radius: 20px;
+    margin: 25px;
+    color:rgb(247, 238, 224);
+}
+
+#results{
+   
+    background-size: cover;
     text-align: center;
-    background-image: '';
+    font-size: 25px;
+    
+    
 }
-/* //rgb(205, 165, 243)
-
-
-#slot-machine{
-  background-color: rgb(205, 165, 243);
-  height: 180px;
-  width: 150px;
-  background-size:cover;
+#play-reset{
+     margin-left: 630px ;
+     margin-right: 630px;
+    
 }
 
+
+      
 
 
 

@@ -1,43 +1,14 @@
 # Yzma's potion Machine
 
 
-    <!-- // for (let result in results){
-    //     resultsImage[results.sect2].imgEl.source = potionChoices[results[result]].imgUrl;
-    // }
-    // for (let result in results){
-    //     resultsImage[results.sect3].imgEl.source = potionChoices[results[result]].imgUrl;
-    // }
-//}
+Inspired one of my favorite childhood movies, the object of this game is to have all the matching potions to help Yzma kick Kuzsco off the throne. 
+To begin all you have to do is press the play button, and to play again just click the try again button to reset the game.
 
-// const resultsImage = {
-//     sect1:{
-//        imgEl: document.getElementById('#sect1-results img')
-//     }
-// };
-// function render(){
 
-//     // render scores
-//     // for in loop is used to loop over an object
-//     // scoreEls['rock']
 
-//     // step 1. loop over the scores and log out the values
-//     for (let score in scores){
-//         console.log(score, "< each property name aka key name");
-//         // console.log(scores[score])
-       
-//         scoreEls[score].textContent = scores[score];
-//          // step 2. assing those values to the appropiate dom location using the 
-//         // scoreEls you cached earlier
-//     }
+This game was built using Css, Javascript, and HTML
 
-//     // try the same idea with the result 
+Game Link 
 
-//     for (let result in results){
-         
-//        resultEls[result].imgEl.source = rpsLookup[results[result]].imgUrl;
-//     // }
-//     // loop over the results 
 
-//     // then use your resultsEls result to get your imgElement
-     
-//     // then you'll set the src equal to the imgUrl that exists in your rpsLookup// -->
+In the future, I plan to add more transitions depending on if the player won or lost, I want to add a story line, and maybe audio. 
