@@ -1,7 +1,6 @@
 const potionChoices = {
     llama: {
         imgUrl: 'img/llamaPotion.png'
-
     },
     panther:{
         imgUrl: 'img/pantherPotion.png'
@@ -23,6 +22,7 @@ const gameResetImage = {
 const backgroundImage={
     imgUrl: 'img/palaceBackground.png'
 }
+
 
 let results;
 const winnerLoser = document.getElementById('results');
