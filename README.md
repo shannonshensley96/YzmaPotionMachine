@@ -24,4 +24,8 @@ To begin all you have to do is press the play button. To play again just click t
  <li>Add transitions for win/loss</li>
  <li>Add audio</li>
  <li>Create Levels and a story line</li>
+<<<<<<< HEAD
  </ul>
+=======
+ </ul>
+>>>>>>> 21914f34dbabc96b66ed6ecd474d9951bcc460cc
